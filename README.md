@@ -1,12 +1,82 @@
-# React + Vite
+# 💪 FitByte-AI — Gemini-Powered Fitness Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**FitByte-AI** is a smart, AI-driven fitness assistant built using **React + Vite**, integrating Google's **Gemini API** to deliver personalized fitness suggestions, workout plans, and wellness support through an interactive chat UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🤖 Chatbot interface powered by Gemini 2.5 Flash
+- 📝 Form to collect user goals and preferences
+- 🧑‍💻 User context to manage profile data
+- 🧠 Gemini API integration for dynamic workout and health suggestions
+- 🔐 Environment-secured API keys using `.env`
+- 💾 History tab for past conversations (stored locally)
+- 📱 Responsive UI with dashboard, chat, and profile
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🏗️ Project Structure
+
+fitByte-AI/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── chats.jsx
+│ │ ├── dashBoardHome.jsx
+│ │ ├── DetailsForm.jsx
+│ │ ├── Hamburger.jsx
+│ │ ├── History.jsx
+│ │ └── Profile.jsx
+│ ├── context/
+│ │ └── userContext.jsx
+│ ├── layout/
+│ │ └── HomeLayout.jsx
+│ ├── pages/
+│ │ ├── Dashboard.jsx
+│ │ └── Home.jsx
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
+├── .env
+├── .gitignore
+├── vite.config.js
+├── package.json
+└── README.md
+
+⚙️ Tech Stack
+
+- ⚛️ React + Vite
+- 🎨 TailwindCSS (or any CSS framework you used)
+- 🌐 Gemini 2.5 Flash (via `@google/generative-ai`)
+- 🧠 Context API for global state
+- 🔐 dotenv for environment configuration
+
+  
+---
+
+## 📦 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/fitByte-AI.git
+cd fitByte-AI
+npm install
+VITE_GEMINI_API_KEY=your_gemini_api_key_here
+npm run dev
+```
+
+## How It Works
+- Users land on the Home page
+- Fill out goals and preferences via DetailsForm.jsx
+- Navigate through a dashboard layout (HomeLayout.jsx)
+- Interact with the chatbot powered by Gemini API (chats.jsx)
+- Track past chats under the History tab
+- View or update details in the Profile section
+
+## Future Enhancements
+ - Voice-based input for the chatbot
+ - Save history to backend (Firebase/MongoDB)
+ - Add Google/Fitbit API integration
+ - Notification-based workout reminders

@@ -78,5 +78,3 @@ npm run dev
 ## Future Enhancements
  - Voice-based input for the chatbot
  - Save history to backend (Firebase/MongoDB)
- - Add Google/Fitbit API integration
- - Notification-based workout reminders
